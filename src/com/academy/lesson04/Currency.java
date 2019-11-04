@@ -29,8 +29,6 @@ public class Currency {
     private String name;
 
     public Currency() {
-        this.value = 0;
-        this.name = null;
     }
 
     public Currency(double value, String name) {
@@ -38,26 +36,46 @@ public class Currency {
         this.name = name;
     }
 
+    Currency(Currency currency) {
+        this.value = currency.value;
+        this.name = currency.name;
+    }
+
     public void print() {
-        System.out.println(value + name);
+        System.out.println(String.format("%.2f ", value) + name);
     }
 
     boolean isEqual(Currency currency) {
-        if (value == value) return true;
-        return false;
+        if (!this.name.equalsIgnoreCase(currency.name))
+            return false;
+        String strValue = String.format("%.2f ", this.value);
+        String strCurrValue = String.format("%.2f ", currency.value);
+        if (!strValue.equalsIgnoreCase(strCurrValue))
+            return false;
+        return true;
     }
 
-    void sum(Currency currency) {
-        if (name != name)
-            System.out.println("Error: currency names are differ" + "'" + name + "'" + " " + "'" + name + "'");
+    public void sum(Currency currency) {
+        if (!this.name.equalsIgnoreCase(currency.name)) {
+            System.out.println("Error: sum, currency names are differ " +  this.name + " and " +  currency.name);
+            return;
+        }
+        this.value += currency.value;
     }
+
     void substract(Currency currency) {
-        double substr = value - value;
+        if (!this.name.equalsIgnoreCase(currency.name)) {
+            System.out.println("Error: currency names are differ:" + "'" + this.name + "'" + " and " + "'" + currency.name + "'");
+            return;
+        }
+        this.value -= currency.value;
     }
+
     void divide(double factor) {
-        factor = value/value;
+        this.value /= factor;
     }
-    void multiply(double factor) {
-        factor = value * value;
+
+    public void multiply(double factor) {
+        this.value *= factor;
     }
 }
