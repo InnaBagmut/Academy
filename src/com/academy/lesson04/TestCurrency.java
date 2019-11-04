@@ -26,7 +26,7 @@ public class TestCurrency {
             - * реализовать возможность запускать выборочно тесты в диалоговом режиме (или через аргумент командной строки)*/
 
     public static void main(String[] args) {
-        Currency myObject1 = new Currency();
+        Currency myObject1 = new Currency(10, "$");
         myObject1.print();
         Currency myObject2 = new Currency(5, "$");
         myObject2.print();
