@@ -6,7 +6,8 @@ public class Currency {
         double value; для хранения значания суммы
         String name; для хранения названия валюты ("грн", "руб", "$")
 
-https://i.imgur.com/1xj2S1m.png
+        Реализовать 2 конструктора:
+            - без параметров
             - и с двумя параметрами, которые принимает (double value, String name);
             - конструктор копирования: (Currency currency)
 
