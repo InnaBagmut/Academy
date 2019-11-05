@@ -2,9 +2,15 @@ package com.academy.lesson05.figure;
 
 public class TestFigure {
     public static void main(String[] args) {
-        //TestCircle.testCircle();
         //testSquare();
-        testTrapezoid();
+        //testTriangle();
+        testCircle();
+        //testTrapezoid();
+    }
+
+    @Override
+    public String toString() {
+        return "TestFigure{}";
     }
 
     public static void testSquare() {
@@ -29,9 +35,25 @@ public class TestFigure {
         System.out.println(myObject2.equals(myObject3));
     }
 
-    @Override
-    public String toString() {
-        return "TestFigure{}";
+    public static void testTriangle() {
+        Ttriangle myObject1 = new Ttriangle(23.55, 563.43, "Brown");
+        myObject1.draw();
+
+    }
+
+    public static void testCircle() {
+
+        Circle myObject1 = new Circle(5);
+        double areaActual = myObject1.area();
+        double areaExpected = Math.PI * 25;
+        System.out.println(areaActual == areaExpected);
+        Circle myObject2 = new Circle(5); // ссылки у проектов разные
+
+        System.out.println(myObject1);
+        System.out.println(myObject1.equals(myObject2));
+        Circle myObject3 = new Circle(10, "Violet");
+        myObject3.draw();
+
     }
 
     public static void testTrapezoid() {

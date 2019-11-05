@@ -11,7 +11,7 @@ public class Circle extends Figure {
         this.radius = radius;
     }
 
-    public Circle(String color, double radius) {
+    public Circle(int radius, String color) {
         super(color);
         this.radius = radius;
     }
@@ -36,6 +36,11 @@ public class Circle extends Figure {
     @Override
     public double area() {
         return Math.PI * radius * radius;
+    }
+
+    @Override
+    public void draw() {
+        System.out.println(String.format("This is a Circle with radius %.2f and color is %s", radius, color));
     }
 
 

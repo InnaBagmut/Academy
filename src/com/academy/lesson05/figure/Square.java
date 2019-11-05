@@ -25,13 +25,13 @@ public class Square extends Figure {
     }
 
     @Override
-    public void draw() {
-        System.out.println(String.format("Square with side=%.2f, color=%s", side, color));
+    public double area() {
+        return side * side;
     }
 
     @Override
-    public double area() {
-        return side * side;
+    public void draw() {
+        System.out.println(String.format("Square with side=%.2f, color=%s", side, color));
     }
 
     @Override
