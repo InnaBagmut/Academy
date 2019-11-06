@@ -1,5 +1,7 @@
 package com.academy.lesson05.date;
 
+import java.util.Objects;
+
 public class DateTimeExt extends DateTime {
     /*    c) Реализовать класс DateTimeExt, который наследуется от класса DateTime
         у него есть дополнительное поле с модификатором private
@@ -53,5 +55,19 @@ public class DateTimeExt extends DateTime {
                 ", second=" + getSecond() +
                 ", milliseconds=" + milliseconds +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof DateTimeExt)) return false;
+        if (!super.equals(o)) return false;
+        DateTimeExt that = (DateTimeExt) o;
+        return milliseconds == that.milliseconds;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), milliseconds);
     }
 }

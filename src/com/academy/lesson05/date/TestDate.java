@@ -27,8 +27,6 @@ public class TestDate {
         Date myObject4 = new Date(25, 02, 1990);
         System.out.println("Compare 2 and 3: " + myObject2.equals(myObject3));
         System.out.println("Compare 2 and 4: " + myObject2.equals(myObject4));
-
-
     }
 
     public static void testDateTime() {
@@ -58,8 +56,15 @@ public class TestDate {
         myObject2.print();
         System.out.println("myObject2: " + myObject2);
         DateTimeExt myObject3 = new DateTimeExt(23, 12, 1993, 12, 44, 55, 789);
-        DateTimeExt myObject4 = new DateTimeExt(23, 12, 1993, 12, 44, 56, 788);
+        DateTimeExt myObject4 = new DateTimeExt(23, 12, 1993, 12, 44, 55, 788);
         System.out.println("Compare 2 and 3: " + myObject2.equals(myObject3));
         System.out.println("Compare 2 and 4: " + myObject2.equals(myObject4));
+
+        System.out.println("Compare actual and expected MS:");
+        myObject2.setMilliseconds(787);
+        int MSactual = myObject2.getMilliseconds();
+        int MSexpected = 788;
+        if(MSactual == MSexpected) System.out.println("Test passed");
+        else System.out.println("Test failed");
     }
 }
