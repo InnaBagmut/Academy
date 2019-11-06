@@ -1,5 +1,7 @@
 package com.academy.lesson05.date;
 
+import java.util.Objects;
+
 public class Date {
     /*    1) a) Создать класс Date, который имеет следующие поля:
             - день
@@ -112,4 +114,27 @@ public class Date {
 
     public double nextYear() {return year++;}
 
+    @Override
+    public String toString() {
+        return "Date{" +
+                "day=" + day +
+                ", month=" + month +
+                ", year=" + year +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Date)) return false;
+        Date date = (Date) o;
+        return day == date.day &&
+                month == date.month &&
+                year == date.year;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(day, month, year);
+    }
 }

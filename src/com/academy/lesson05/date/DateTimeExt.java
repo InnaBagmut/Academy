@@ -42,4 +42,16 @@ public class DateTimeExt extends DateTime {
                 getDay(), getMonth(), getYear(), getHour(), getMinute(), getSecond(), milliseconds));
     }
 
+    @Override
+    public String toString() {
+        return "DateTimeExt{" +
+                "day=" + getDay() +
+                ", month=" + getMonth() +
+                ", year=" + getYear() +
+                ", hour=" + getHour() +
+                ", minute=" + getMinute() +
+                ", second=" + getSecond() +
+                ", milliseconds=" + milliseconds +
+                '}';
+    }
 }
