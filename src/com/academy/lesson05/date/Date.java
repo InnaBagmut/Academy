@@ -1,6 +1,6 @@
 package com.academy.lesson05.date;
 
-public abstract class Date {
+public class Date {
     /*    1) a) Создать класс Date, который имеет следующие поля:
             - день
             - месяц
@@ -86,8 +86,20 @@ public abstract class Date {
         if (year > 10000 || year <= 0) System.out.println("Error 03: Enter correct year");
     }
 
+    public int getDay() {
+        return day;
+    }
+
+    public int getMonth() {
+        return month;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
     public void print() {
-        System.out.println(day + "." + month + "." + year);
+        System.out.println("Date is: " + day + "." + month + "." + year);
     }
 
     public double nextDay() {
