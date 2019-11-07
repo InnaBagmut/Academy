@@ -1,6 +1,6 @@
 package com.academy.lesson05.figure;
 
-public class Ttriangle extends Figure{
+public class Ttriangle extends Figure {
 
     private double side1;
     private double side2;

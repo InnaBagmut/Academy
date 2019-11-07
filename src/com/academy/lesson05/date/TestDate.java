@@ -27,6 +27,12 @@ public class TestDate {
         Date myObject4 = new Date(25, 02, 1990);
         System.out.println("Compare 2 and 3: " + myObject2.equals(myObject3));
         System.out.println("Compare 2 and 4: " + myObject2.equals(myObject4));
+
+        myObject4.setDay(24);
+        int dayActual = myObject4.getDay();
+        int dayExpected = 25;
+        if(dayActual == dayExpected) System.out.println("Test passed");
+        else System.out.println("Test failed");
     }
 
     public static void testDateTime() {
@@ -61,10 +67,11 @@ public class TestDate {
         System.out.println("Compare 2 and 4: " + myObject2.equals(myObject4));
 
         System.out.println("Compare actual and expected MS:");
-        myObject2.setMilliseconds(787);
-        int MSactual = myObject2.getMilliseconds();
-        int MSexpected = 788;
-        if(MSactual == MSexpected) System.out.println("Test passed");
+        myObject2.setMilliseconds(788);
+        int msActual = myObject2.getMilliseconds();
+        int msExpected = 788;
+        if(msActual == msExpected) System.out.println("Test passed");
         else System.out.println("Test failed");
+
     }
 }

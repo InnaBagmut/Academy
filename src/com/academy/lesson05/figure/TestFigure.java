@@ -2,10 +2,10 @@ package com.academy.lesson05.figure;
 
 public class TestFigure {
     public static void main(String[] args) {
-        //testSquare();
-        //testTriangle();
+        testSquare();
+        testTriangle();
         testCircle();
-        //testTrapezoid();
+        testTrapezoid();
     }
 
     @Override
@@ -14,6 +14,9 @@ public class TestFigure {
     }
 
     public static void testSquare() {
+
+        System.out.println("==================================================");
+        System.out.println("Test Square:");
         Square myObject1 = new Square(3); // black
         Square myObject2 = new Square(5, "Orange");
         Square myObject3 = new Square(5, "Orange");
@@ -36,12 +39,18 @@ public class TestFigure {
     }
 
     public static void testTriangle() {
+
+        System.out.println("==================================================");
+        System.out.println("Test Triangle:");
         Ttriangle myObject1 = new Ttriangle(23.55, 563.43, "Brown");
         myObject1.draw();
 
     }
 
     public static void testCircle() {
+
+        System.out.println("==================================================");
+        System.out.println("Test Circle:");
 
         Circle myObject1 = new Circle(5);
         double areaActual = myObject1.area();
@@ -57,6 +66,9 @@ public class TestFigure {
     }
 
     public static void testTrapezoid() {
+
+        System.out.println("==================================================");
+        System.out.println("Test Trapezoid:");
         Trapezoid myObject1 = new Trapezoid("Blue");
         myObject1.setUpperBase(10);
         myObject1.setLowerBase(10);
@@ -67,8 +79,7 @@ public class TestFigure {
         double heightExpected = 10;
         if (heightActual == heightExpected) System.out.println("Test passed");
         else System.out.println("Test failed");
-        System.out.println("=====================================");
-        System.out.println(heightActual);
+        System.out.println("HeightActual: " + heightActual);
 
         Trapezoid myObject2 = new Trapezoid(23.34253, 4534.32432, 324.234, "Grey");
         myObject2.draw();
