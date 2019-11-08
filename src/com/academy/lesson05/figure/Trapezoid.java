@@ -78,4 +78,16 @@ public class Trapezoid extends Figure {
     public void draw() {
         System.out.println(String.format("Trapezoid with bases %.2f, %.2f, height %.2f and color = %s", upperBase, lowerBase, height, color));
     }
+
+    @Override
+    public String toString() {
+        return "Trapezoid{" +
+                "upperBase=" + upperBase +
+                ", lowerBase=" + lowerBase +
+                ", height=" + height +
+                ", side1=" + side1 +
+                ", side2=" + side2 +
+                ", color='" + color + '\'' +
+                '}';
+    }
 }
