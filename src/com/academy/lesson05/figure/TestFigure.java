@@ -6,6 +6,19 @@ public class TestFigure {
         testTriangle();
         testCircle();
         testTrapezoid();
+
+        System.out.println("==================================================");
+        System.out.println("This is an array:");
+        Figure[] figuresArray = {new Ttriangle(23, 55, "White"),
+                new Trapezoid(34, 12, 65.234, "Purple"),
+                new Square(45.56765, "Black"),
+                new Circle(77, "Yellow"),
+                new Trapezoid(12, 45, 76, "Transparent"),
+                new Ttriangle(23, 54, "Green")};
+        for (int i = 0; i < figuresArray.length; i++) {
+            //if (figuresArray[i] == Circle())
+            figuresArray[i].draw();
+        }
     }
 
     @Override

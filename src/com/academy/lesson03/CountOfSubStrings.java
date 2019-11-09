@@ -45,7 +45,7 @@ public class CountOfSubStrings {
                 break;
             count2++;
         }
-        System.out.println(count2);
+        System.out.println("Count: " + count2);
     }
 
     public static void countOfStringsOption3() throws IOException {
