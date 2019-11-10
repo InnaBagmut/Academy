@@ -1,33 +1,35 @@
 package com.academy.lesson06.enumerationHomeWork;
 
 public class UseWeekDays {
-    protected WeekDays oneDay;
+    protected WeekDays today;
 
-    public WeekDays getOneDay() {
-        return oneDay;
+    public WeekDays getToday() {
+        return today;
     }
 
-    public void setOneDay(WeekDays oneDay) {
-        this.oneDay = oneDay;
+    public void setToday(WeekDays today) {
+        this.today = today;
     }
 
     @Override
     public String toString() {
         return "UseWeekDays{" +
-                "oneDay=" + oneDay +
+                "today=" + today +
                 '}';
     }
 
     public void dayBeforeYesterday(WeekDays direction) {
         //getOneDay() += oneDay;
-        switch (direction) {
+/*        switch (direction) {
             case MONDAY:
-               // oneDay--;
-                break;
-        }
+                return "Суббота";
+            break;
+        }*/
     }
 
     public void dayAfterTomorrow() {
-
+        if (today == WeekDays.MONDAY) System.out.println("The day after tomorrow is Wednesday");
+        else if (today == WeekDays.TUESDAY) System.out.println("The day after tomorrow is Thursday");
+        else System.out.println("The day after tomorrow is undefined");
     }
 }

@@ -5,9 +5,10 @@ import static com.academy.lesson06.enumerationHomeWork.WeekDays.*;
 public class TestEnumeration {
     public static void main(String[] args) {
         UseWeekDays myObject = new UseWeekDays();
-        myObject.setOneDay(MONDAY);
+        myObject.setToday(MONDAY);
         System.out.println(myObject);
-        System.out.println(myObject.getOneDay());
+        System.out.println(myObject.getToday());
+        myObject.dayAfterTomorrow();
 
         System.out.println("This is an array filled by days of the week:");
         WeekDays[] daysArray = {SUNDAY, THURSDAY, MONDAY, FRIDAY, TUESDAY};
