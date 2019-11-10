@@ -7,6 +7,7 @@ public class TestEnumeration {
         UseWeekDays myObject = new UseWeekDays();
         myObject.setOneDay(MONDAY);
         System.out.println(myObject);
+        System.out.println(myObject.getOneDay());
 
         System.out.println("This is an array filled by days of the week:");
         WeekDays[] daysArray = {SUNDAY, THURSDAY, MONDAY, FRIDAY, TUESDAY};
