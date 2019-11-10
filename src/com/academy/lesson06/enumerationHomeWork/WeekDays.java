@@ -1,11 +1,21 @@
 package com.academy.lesson06.enumerationHomeWork;
 
 public enum WeekDays {
-    SUNDAY,
-    MONDAY,
-    TUESDAY,
-    WEDNESDAY,
-    THURSDAY,
-    FRIDAY,
-    SATURDAY
+    SUNDAY ("Воскресенье"),
+    MONDAY ("Понедельник"),
+    TUESDAY ("Вторник"),
+    WEDNESDAY ("Среда"),
+    THURSDAY ("Четверг"),
+    FRIDAY ("Пятница"),
+    SATURDAY ("Суббота");
+
+    private String name;
+
+    WeekDays(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
