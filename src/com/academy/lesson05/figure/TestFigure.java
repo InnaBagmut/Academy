@@ -14,10 +14,11 @@ public class TestFigure {
                 new Square(45.56765, "Black"),
                 new Circle(77, "Yellow"),
                 new Trapezoid(12, 45, 76, "Transparent"),
-                new Ttriangle(23, 54, "Green")};
+                new Ttriangle(23, 54, "Green"),
+                new Circle(56, "Pink")};
         for (int i = 0; i < figuresArray.length; i++) {
-            //if (figuresArray[i] == Circle())
-            figuresArray[i].draw();
+            if (figuresArray[i] instanceof Circle)
+                figuresArray[i].draw();
         }
     }
 
