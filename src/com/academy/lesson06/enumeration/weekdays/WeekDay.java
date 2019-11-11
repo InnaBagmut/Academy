@@ -19,16 +19,37 @@ public enum WeekDay {
         return name;
     }
 
-    @Override
+/*    @Override
     public String toString() {
         return name() + " " + ordinal();
-    }
+    }*/
 
     WeekDay next() {
-        WeekDay day = values()[(ordinal() + 1) % values().length];
+        //WeekDay day = values()[(ordinal() + 1) % values().length];
+        int index = ordinal() + 1;
+        if (index > 6)
+            index = 0;
+        WeekDay day = values()[index];
         return day;
     }
 
+    public WeekDay dayAfterTomorrowOption2() {  // Option1 in UseWeekDay class
+        return this.next().next();
+    }
+
+    WeekDay previous() {
+        int index = ordinal() - 1;
+        if (index < 0)
+            index = 6;
+        WeekDay day = values()[index];
+        return day;
+    }
+
+    public WeekDay dayBeforeYesterday() {
+        return this.previous().previous();
+    }
+
+    //this is just training:
     boolean isWeekend() {
         switch (this) {
             case SATURDAY:
@@ -37,7 +58,6 @@ public enum WeekDay {
             default:
                 return false;
         }
-
-        }
     }
+}
 

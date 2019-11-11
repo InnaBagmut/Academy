@@ -8,7 +8,19 @@ public class TestEnumeration {
         myObject.setToday(MONDAY);
         System.out.println(myObject);
         System.out.println(myObject.getToday());
-        myObject.dayAfterTomorrow();
+        System.out.println("Day After Tomorrow Option1:");
+        myObject.dayAfterTomorrowOption1();
+
+        WeekDay day = SUNDAY;
+        System.out.println("Day After Tomorrow Option2:");
+        //WEDNESDAY.dayAfterTomorrowOption2();
+        WeekDay dayAfterTomorrow = day.dayAfterTomorrowOption2();
+        System.out.println("2 days after " + day + " is " + dayAfterTomorrow);
+
+        System.out.println("Day Before Yesterday:");
+        //TUESDAY.dayBeforeYesterday();
+        WeekDay dayBeforeYesterday = day.dayBeforeYesterday();
+        System.out.println("2 days before " + day + " is " + dayBeforeYesterday);
 
         System.out.println("This is an array filled by days of the week:");
         WeekDay[] daysArray = {SUNDAY, THURSDAY, MONDAY, FRIDAY, TUESDAY};

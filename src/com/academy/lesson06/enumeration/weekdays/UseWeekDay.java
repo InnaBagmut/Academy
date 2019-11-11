@@ -18,7 +18,7 @@ public class UseWeekDay {
                 '}';
     }
 
-    public void dayBeforeYesterday(WeekDay direction) {
+    public void tryingToResolveTheDayBeforeYesterday(WeekDay direction) {
         //getOneDay() += oneDay;
 /*        switch (direction) {
             case MONDAY:
@@ -27,7 +27,8 @@ public class UseWeekDay {
         }*/
     }
 
-    public void dayAfterTomorrow() {
+    //trying to implement task through simple if else - you can find more profesional solution in WeekDay file
+    public void dayAfterTomorrowOption1() {
         if (today == WeekDay.MONDAY) System.out.println("The day after tomorrow is Wednesday");
         else if (today == WeekDay.TUESDAY) System.out.println("The day after tomorrow is Thursday");
         else System.out.println("The day after tomorrow is undefined");
