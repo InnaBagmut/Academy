@@ -17,7 +17,6 @@ public class GetWordsWithDReturn {
         String phrase = reader.readLine();
         System.out.println("You entered: " + phrase);
         List<String> separateWords = Arrays.asList(phrase.split(" "));
-
         List<String> dwords = new ArrayList<>();
         for (int i = 0; i < separateWords.size(); i++) {
             if (separateWords.get(i).startsWith("d"))

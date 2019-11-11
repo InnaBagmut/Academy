@@ -31,7 +31,7 @@ public class Square extends Figure {
 
     @Override
     public void draw() {
-        System.out.println(String.format("Square with side=%.2f, color=%s", side, color));
+        System.out.println(String.format("Square with side = %.2f, color = %s", side, color));
     }
 
     @Override
