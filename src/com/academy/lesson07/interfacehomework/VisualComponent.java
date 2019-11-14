@@ -11,7 +11,6 @@ public interface VisualComponent {
 
     2) Добавить новый метод по умолчанию в VisualComponent
             - default void draw3D(); //
-
         унаследовать класс Component от VisualComponent
             - перекрыть метод draw3D у Label
             - продемонстрировать работу метода draw3D() во всех компонентах*/

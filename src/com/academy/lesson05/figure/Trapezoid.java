@@ -76,7 +76,7 @@ public class Trapezoid extends Figure {
 
     @Override
     public void draw() {
-        System.out.println(String.format("Trapezoid with bases %.2f, %.2f, height %.2f and color = %s", upperBase, lowerBase, height, color));
+        System.out.println(String.format(" Trapezoid with bases %.2f, %.2f, height %.2f and color = %s", upperBase, lowerBase, height, color));
     }
 
     @Override

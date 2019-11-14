@@ -12,7 +12,7 @@ public enum WeekDay {
     TUESDAY("Вторник"),
     WEDNESDAY("Среда"),
     THURSDAY("Четверг"),
-    FRIDAY("Пятница"),
+    FRIDAY("Пятница!"),
     SATURDAY("Суббота");
 
     private String name;

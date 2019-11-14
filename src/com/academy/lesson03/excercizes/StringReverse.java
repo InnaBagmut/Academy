@@ -13,7 +13,7 @@ public class StringReverse {
         System.out.println(array1.toString());
         return array1;*/
         char[] tmp = new char[str1.length()];
-       // tmp[0] = str1.charAt(str1.length() - 1);
+       // tmp[0] = str1.charAt(str1.length() - 1); !
 
         for (int i = 0, j = 1; i < tmp.length; i++, j++) {
             tmp[i] = str1.charAt(str1.length() - j);

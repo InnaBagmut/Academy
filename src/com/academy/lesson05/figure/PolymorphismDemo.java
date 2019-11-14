@@ -6,7 +6,7 @@ public class PolymorphismDemo {
                 new Square(65, "Orange"),
                 new Trapezoid(34, 76, 32, "Purple"),
                 new Ttriangle(32, 12, "Transparent"),
-                new Circle(43, "Blue")};
+                new Circle(43, "Blue ")};
         figures[0].draw();
         for (int i = 0; i < figures.length; i++) {
             if(figures[i] instanceof Circle)

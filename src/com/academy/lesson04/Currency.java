@@ -57,7 +57,7 @@ public class Currency {
 
     public void sum(Currency currency) {
         if (!this.name.equalsIgnoreCase(currency.name)) {
-            System.out.println("Error: sum, currency names are differ " +  this.name + " and " +  currency.name);
+            System.out.println("Error01: sum, currency names are differ " +  this.name + " and " +  currency.name);
             return;
         }
         this.value += currency.value;
@@ -65,7 +65,7 @@ public class Currency {
 
     void substract(Currency currency) {
         if (!this.name.equalsIgnoreCase(currency.name)) {
-            System.out.println("Error: currency names are differ:" + "'" + this.name + "'" + " and " + "'" + currency.name + "'");
+            System.out.println("Error02: currency names are differ:" + "'" + this.name + "'" + " and " + "'" + currency.name + "'");
             return;
         }
         this.value -= currency.value;

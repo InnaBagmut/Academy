@@ -9,7 +9,7 @@ public class WeightOnTheMoon {
          - запросить земной вес с консоли
 		 - вывести ваш вес на Земле
 		 - вывести ваш вес на Луне*/
-        System.out.println("==========================================================");
+        System.out.println("===========================================================");
         System.out.println("Узнай, сколько ты весишь на Луне!");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Какой твой земной вес?");

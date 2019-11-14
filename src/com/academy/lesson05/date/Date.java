@@ -75,17 +75,17 @@ public class Date {
 
     public void setDay(int day) {
         this.day = day;
-        if (day > 31 || day <= 0) System.out.println("Error 01: Enter correct day");
+        if (day > 31 || day <= 0) System.out.println(" Error 01: Enter correct day");
     }
 
     public void setMonth(int month) {
         this.month = month;
-        if (month > 12 || month <= 0) System.out.println("Error 02: Enter correct month");
+        if (month > 12 || month <= 0) System.out.println(" Error 02: Enter correct month");
     }
 
     public void setYear(int year) {
         this.year = year;
-        if (year > 10000 || year <= 0) System.out.println("Error 03: Enter correct year");
+        if (year > 10000 || year <= 0) System.out.println(" Error 03: Enter correct year");
     }
 
     public int getDay() {

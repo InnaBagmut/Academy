@@ -11,7 +11,7 @@ public class TriangleAgain {
          ****
          *****
          ******                 */
-        System.out.println("==========================================================");
+        System.out.println("===========================================================");
         System.out.println("Рисуем треугольник: ");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Задайте размерность для равностороннего треугольника: ");

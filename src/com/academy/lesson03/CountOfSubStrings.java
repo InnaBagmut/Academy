@@ -35,7 +35,7 @@ public class CountOfSubStrings {
 
     public static void countOfStringsOption2() throws IOException {
         // 2 способ неудобный
-        String str2 = "adfadhellosdfaHellodshellohellohelloasdfads";
+        String str2 = "sdawadfadhellosdfaHellodshellohellohelloasdfads";
         String sub2 = "hello";
         int count2 = 0;
 

@@ -40,7 +40,7 @@ public class DateTimeExt extends DateTime {
     }
 
     public void print() {
-        System.out.println(String.format("Date, time and even ms: %d.%d.%d %d:%d:%d.%d",
+        System.out.println(String.format(" Date, time and even ms: %d.%d.%d %d:%d:%d.%d",
                 getDay(), getMonth(), getYear(), getHour(), getMinute(), getSecond(), milliseconds));
     }
 

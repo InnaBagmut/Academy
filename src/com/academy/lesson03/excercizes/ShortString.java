@@ -2,7 +2,7 @@ package com.academy.lesson03.excercizes;
 
 public class ShortString {
     public static void main(String[] args) {
-        String longStr = "Hello World, erhewuo";
+        String longStr = "Hello World, wqsdwqdfwq";
         String shortStr = "Hello...";
         // longStr = shortStr;
         String result = longStr.substring(0, 5) + "...";

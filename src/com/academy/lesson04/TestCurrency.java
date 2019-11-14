@@ -26,13 +26,13 @@ public class TestCurrency {
             - * реализовать возможность запускать выборочно тесты в диалоговом режиме (или через аргумент командной строки)*/
 
     public static void main(String[] args) {
-        Currency myObject1 = new Currency(10, "$");
+        Currency myObject1 = new Currency(10, "$ ");
         myObject1.print();
-        Currency myObject2 = new Currency(5, "$");
+        Currency myObject2 = new Currency(5, "$ ");
         myObject2.print();
         myObject1.sum(myObject2);
         myObject1.print();
-        Currency myObject3 = new Currency(5, "hrn");
+        Currency myObject3 = new Currency(5, "hrn ");
         myObject3.print();
         myObject1.sum(myObject3);
     }

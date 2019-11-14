@@ -6,7 +6,7 @@ public class AppMain02 {
             String name = args[0];
             System.out.println("Hello " + name + "!");
         } else
-            System.out.println("Hello!");
+            System.out.println("1Hello!");
     }
 }
 // не ясна логика задачи, и команда java -cp ./out/ com.academy.lesson01.AppMain02 Peter не сработала по инструкции в директории task

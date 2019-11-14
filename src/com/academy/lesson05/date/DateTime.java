@@ -99,7 +99,7 @@ public class DateTime extends Date {
 
     //@SuppressWarnings("deprecation")
     public void print() {
-        System.out.println(String.format("Date and time: %d.%d.%d %d:%d:%d", super.getDay(), super.getMonth(), super.getYear(), hour, minute, second)); //не хочет подхватывать day, month, year
+        System.out.println(String.format(" Date and time: %d.%d.%d %d:%d:%d", super.getDay(), super.getMonth(), super.getYear(), hour, minute, second)); //не хочет подхватывать day, month, year
     }
 
     public int nextSecond() {

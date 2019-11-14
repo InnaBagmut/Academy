@@ -2,7 +2,7 @@ package com.academy.lesson07.interfacehomework;
 
 public class ComponentDemo {
     public static void main(String[] args) {
-        System.out.println("==================================");
+        System.out.println("===================================");
         System.out.println("Test Visual component: ");
         VisualComponent myComponent1 = new Component();
         myComponent1.draw();

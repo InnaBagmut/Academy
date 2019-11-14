@@ -9,6 +9,6 @@ public class Button extends Component {
         System.out.println("Button");
     }
     public void push() {
-        System.out.println("I can be pushed by user");
+        System.out.println(" I can be pushed by user");
     }
 }

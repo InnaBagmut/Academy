@@ -12,7 +12,7 @@ public class TestFigure {
         Figure[] figuresArray = {new Ttriangle(23, 55, "White"),
                 new Trapezoid(34, 12, 65.234, "Purple"),
                 new Square(45.56765, "Black"),
-                new Circle(77, "Yellow"),
+                new Circle(77, " Yellow"),
                 new Trapezoid(12, 45, 76, "Transparent"),
                 new Ttriangle(23, 54, "Green"),
                 new Circle(56, "Pink")};

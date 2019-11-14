@@ -12,7 +12,7 @@ public class TestEnumeration {
         myObject.dayAfterTomorrowOption1();
 
 
-        System.out.println("Day After Tomorrow Option2:");
+        System.out.println(" Day After Tomorrow Option2:");
         WeekDay day1 = SUNDAY;
         //WEDNESDAY.dayAfterTomorrowOption2();
         WeekDay dayAfterTomorrow = day1.dayAfterTomorrowOption2();

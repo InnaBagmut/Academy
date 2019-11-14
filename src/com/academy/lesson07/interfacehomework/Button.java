@@ -6,9 +6,9 @@ public class Button extends Component {
 
     @Override
     public void draw() {
-        System.out.println("Draw Button");
+        System.out.println(" Draw Button");
     }
     public void push() {
-        System.out.println("I can be pushed by user");
+        System.out.println(" I can be pushed by user");
     }
 }
