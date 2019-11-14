@@ -40,7 +40,7 @@ public class Circle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println(String.format(" This is a Circle with radius %.2f and color is %s", radius, color));
+        System.out.println(String.format("This is a Circle with radius %.2f and color is %s", radius, color));
     }
 
 

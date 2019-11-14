@@ -25,7 +25,7 @@ public class ArrayDescribePerson {
         for (int row = 0; row < listOfPersons.length; row++) {
             System.out.println();
             for (int column = 0; column < listOfPersons[row].length; column++) {
-                System.out.print(listOfPersons[row][column] + "  ");
+                System.out.print(listOfPersons[row][column] + " ");
             }
         }
         System.out.println();

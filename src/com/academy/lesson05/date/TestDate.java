@@ -14,7 +14,7 @@ public class TestDate {
     }
 
     public static void testDate() {
-        System.out.println("=======================================================");
+        System.out.println("======================================================");
         System.out.println("Data tests: ");
         Date myObject1 = new Date();
         myObject1.print();

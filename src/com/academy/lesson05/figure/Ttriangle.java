@@ -64,6 +64,6 @@ public class Ttriangle extends Figure {
 
     @Override
     public void draw() {
-        System.out.println(String.format(" This is a Triangle with sides %.2f, %.2f, %.2f and color is %s", side1, side2, side3, color));
+        System.out.println(String.format("This is a Triangle with sides %.2f, %.2f, %.2f and color is %s", side1, side2, side3, color));
     }
 }

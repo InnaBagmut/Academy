@@ -9,7 +9,7 @@ import java.util.List;
 
 public class GetWordsWithDReturn {
     public static List<String> getWordsStartingWithD() throws IOException {
-        System.out.println("==============================================================================");
+        System.out.println("=============================================================================");
         System.out.println("The program outputs the number of words that begin with 'd' letter:");
         System.out.println("Enter phrase or random words: ");
         Reader r = new InputStreamReader(System.in);

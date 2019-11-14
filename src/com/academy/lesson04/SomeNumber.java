@@ -33,7 +33,7 @@ public class SomeNumber {
     }
 
     public void print() {
-        System.out.println("Число:  " + n);
+        System.out.println("Число: " + n);
     }
 
     public boolean isPozitive() {

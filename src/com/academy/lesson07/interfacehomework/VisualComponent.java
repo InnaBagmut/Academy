@@ -8,7 +8,6 @@ public interface VisualComponent {
         Интерфейс VisualComponent должен иметь один метод:
                 - void draw();
                 -продемонстрировать работу метода draw() у всех компонентов
-
     2) Добавить новый метод по умолчанию в VisualComponent
             - default void draw3D(); //
         унаследовать класс Component от VisualComponent

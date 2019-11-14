@@ -13,7 +13,7 @@ public class TestSomeNumber {
         myObject.print();
         boolean x = myObject.isPozitive();
         System.out.println(x);
-        System.out.println(" ");
+        System.out.println("");
         myObject.setN(-1);
         myObject.print();
         x = myObject.isPozitive();

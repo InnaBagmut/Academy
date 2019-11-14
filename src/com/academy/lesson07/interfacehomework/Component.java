@@ -23,10 +23,10 @@ public class Component implements VisualComponent {
 
     @Override
     public void draw3D() {
-        System.out.println(" 3D draw component");
+        System.out.println("3D draw component");
     }
 
     public void show() {
-        System.out.println(" Display on the screen");
+        System.out.println("Display on the screen");
     }
 }

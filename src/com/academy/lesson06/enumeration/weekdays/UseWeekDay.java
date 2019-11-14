@@ -31,6 +31,6 @@ public class UseWeekDay {
     public void dayAfterTomorrowOption1() {
         if (today == WeekDay.MONDAY) System.out.println("The day after tomorrow is Wednesday");
         else if (today == WeekDay.TUESDAY) System.out.println("The day after tomorrow is Thursday");
-        else System.out.println(" The day after tomorrow is undefined");
+        else System.out.println("The day after tomorrow is undefined");
     }
 }

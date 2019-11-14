@@ -19,7 +19,7 @@ public class TriangleFromForCycle {
     d) упаковать в jar
     e) запустить из jar архива*/
     public static String triangleFromSymbols() throws IOException {
-        System.out.println("==============================================================================");
+        System.out.println("=============================================================================");
         System.out.println("The program outputs the triangle with predefined size and filling:");
         Reader r = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(r);

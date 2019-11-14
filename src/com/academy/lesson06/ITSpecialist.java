@@ -4,5 +4,4 @@ public class ITSpecialist {
     public static void doTests() {
 
     }
-    //QA
 }

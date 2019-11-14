@@ -13,7 +13,7 @@ public class CountOfSubStrings {
         - выводит исходные строку и подстроку и выводит кол-во вхождений строки в подстроку*/
 
     public static void countOfStrings() throws IOException {
-        System.out.println("=============================================================================");
+        System.out.println("============================================================================");
         System.out.println("The program counts the numbers of congruences:");
         Reader r = new InputStreamReader(System.in);
         BufferedReader reader = new BufferedReader(r);

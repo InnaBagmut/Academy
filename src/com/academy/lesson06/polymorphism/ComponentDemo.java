@@ -11,7 +11,7 @@ public class ComponentDemo {
         Button testButton1 = new Button();
         testButton1.push();
 
-        System.out.println("===================================");
+        System.out.println("==================================");
         System.out.println("Full array: ");
 
         Component[] componentsArray = {new Button(), new RoundButton(), new CheckBox(), new Label()};

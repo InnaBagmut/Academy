@@ -23,5 +23,4 @@ public enum Season {
         Season season = values()[index];
         return season;
     }
-    //for commit
 }

@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         MinMaxAvgValues.getMinMaxAvg();
         WeightOnTheMoon.weightOnTheMoon();
-        //DivisionWithReminder.divisionWithReminder();
+        DivisionWithReminder.divisionWithReminder();
         TriangleAgain.triangleAgain();
     }
 }

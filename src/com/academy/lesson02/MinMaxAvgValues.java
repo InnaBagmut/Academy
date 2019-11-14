@@ -7,7 +7,7 @@ public class MinMaxAvgValues {
       /*    1) Написать программу ввода с клавиатуры последовательно 3 чисел. Вывести
     минимальное максимальное и средние значения*/
     public static void getMinMaxAvg() {
-        System.out.println("==============================================================================");
+        System.out.println("=============================================================================");
         System.out.println("Программа определения max, min и middle числа");
         System.out.println("Введите 3 числа:");
         Scanner scanner = new Scanner(System.in);

@@ -28,7 +28,7 @@ public abstract class Figure {
     public abstract double area();
 
     public void draw() {
-        System.out.println(" Figure ");
+        System.out.println("Figure ");
     }
 
     @Override

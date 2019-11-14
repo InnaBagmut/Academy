@@ -11,6 +11,6 @@ public class AppMain {
         BufferedReader reader = new BufferedReader(r);
         System.out.print("What is your name? ");
         String name = reader.readLine();
-        System.out.println("1Hello, " + name);
+        System.out.println("Hello, " + name);
     }
 }
