@@ -1,4 +1,4 @@
-package com.academy.lesson06;
+package com.academy.lesson07.interfacehomework;
 
 public class CheckBox extends Button {
     @Override

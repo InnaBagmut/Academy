@@ -1,4 +1,4 @@
-package com.academy.lesson06;
+package com.academy.lesson06.polymorphism;
 
 public class Label extends Component {
     @Override

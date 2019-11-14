@@ -1,4 +1,4 @@
-package com.academy.lesson06;
+package com.academy.lesson07.interfacehomework;
 
 public class Button extends Component {
     //Object object = new Button();
@@ -6,7 +6,7 @@ public class Button extends Component {
 
     @Override
     public void draw() {
-        System.out.println("Button");
+        System.out.println("Draw Button");
     }
     public void push() {
         System.out.println("I can be pushed by user");
