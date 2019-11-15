@@ -14,5 +14,7 @@ public interface VisualComponent {
             - перекрыть метод draw3D у Label
             - продемонстрировать работу метода draw3D() во всех компонентах*/
     void draw();
-    void draw3D();
+    default void draw3D() {
+        System.out.println("3D draw Visual Component");
+    }
 }
