@@ -1,8 +1,3 @@
-package com.academy.lesson05.date;
-
-import java.util.Objects;
-
-public class DateTime extends Date {
 /*    b) Реализовать класс DateTime, который наследуется от класса Date.
     В нем должны быть дополнительные поля
 			- hour (часы)
@@ -48,6 +43,12 @@ public class DateTime extends Date {
     который выводит время в 12 часовом формате, если isTimeFormat12 равно true:  3:05 p.m.
     выводит время в 24 часовом формате, если isTimeFormat12 равно false: 15:05*/
 
+package com.academy.lesson05.date;
+
+import java.util.Objects;
+
+public class DateTime extends Date {
+
     private int hour;
     private int minute;
     private int second;
@@ -61,6 +62,12 @@ public class DateTime extends Date {
     //@SuppressWarnings("deprecation")
     public DateTime(int day, int month, int year, int hour, int minute, int second) {
         super(day, month, year);
+        this.hour = hour;
+        this.minute = minute;
+        this.second = second;
+    }
+
+    public DateTime(int hour, int minute, int second) {    // this constructor uses in \com\academy\lesson08\CorrectTime.java
         this.hour = hour;
         this.minute = minute;
         this.second = second;
