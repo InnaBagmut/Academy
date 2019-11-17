@@ -15,10 +15,21 @@ public class CharAndSort {
         System.out.println(word2[2]);
         System.out.println("There is one char element: " + word2[2]);
 
+        System.out.println();
+        //char min = 0;
         for (int i = 0; i < word2.length; i++) {
-            int min = word2[i];
-            if (word2[i] < word2[i+1]) word2[i] = word2[i+1];
-            System.out.print(word2[i]);
+            for (int j = 0; j < word2.length - 1; j++) {
+                if (word2[j] > word2[j + 1]) {
+                    char temp = word2[j];
+                    word2[j] = word2[j + 1];
+                    word2[j + 1] = temp;
+                }
+            }
+            //System.out.print(word2[i]);
         }
+        System.out.print("Sorted char: ");
+        System.out.println(word2);
+        String word = new String(word2);
+        System.out.println("Sorted string: " + word);
     }
 }
