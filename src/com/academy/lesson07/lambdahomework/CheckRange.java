@@ -16,7 +16,7 @@ public class CheckRange {
         };
         System.out.println("My first anonymous method: " + myObject1.getTrueOrFalse(20));
 
-        CheckInterface lambda = check -> check >= 10 && check <= 20;
+        CheckInterface lambda = d -> d >= 10 && d <= 20;
         boolean checkRange2 = lambda.getTrueOrFalse(20);
         System.out.println("My lambda result: " + checkRange2);
 

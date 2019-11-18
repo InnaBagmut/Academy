@@ -11,7 +11,7 @@ public class CharAndSort {
 
         char[] word2 = word1.toCharArray();
         System.out.println(word2);
-        System.out.println("There are chars: " + word2);
+        System.out.println("There are chars: " + new String(word2));
         System.out.println(word2[2]);
         System.out.println("There is one char element: " + word2[2]);
 
