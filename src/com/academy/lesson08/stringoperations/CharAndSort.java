@@ -1,3 +1,5 @@
+//2) Слово "Constructor" => превратить в char[] => отсортировать => снова в String => Ccnoorrsttu
+
 package com.academy.lesson08.stringoperations;
 
 public class CharAndSort {
