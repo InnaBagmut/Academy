@@ -49,16 +49,15 @@
 
 package com.academy.lesson05.date;
 
-import com.academy.lesson06.Person;
-import java.util.Comparator;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Date implements Comparable<Date> { //"implements Comparable<Date>" дописано позже, для пекета "lesson10.homework"
+public class Date implements Comparable<Date> { //"implements Comparable<Date>" дописано позже, для пакета "lesson10.homework"
 
-    private int day;
-    private int month;
-    private int year;
+    protected int day;
+    protected int month;
+    protected int year;
 
     public Date() {
         this.day = 1;

@@ -19,11 +19,15 @@ public class FilterAndSortDemo {
         Collections.sort(dates);
         System.out.println(dates);
 
-        //dates.sort(new ComparatorDateImplementation());
-        //System.out.println(dates);
+        dates.sort(new ComparatorDateImplementation());
+        System.out.println(dates);
 
         System.out.println("С помощью лямбды по дням:");
-        //dates.sort((o1, o2) -> o1.getYear().compareTo(o2.getYear()));
-
+        dates.sort((o1, o2) -> {
+            if (o1.getDay() < o2.getDay()) return -1;
+            if (o1.getDay() > o2.getDay()) return 1;
+            return 0;
+        });
+        System.out.println(dates);
     }
 }
